@@ -13,6 +13,10 @@ body {
 font-family: "Roboto", sans-serif;
 color: var(--text);
 background-color: var(--white);
+width: 1142px;
+padding: 0 156px;
+margin: 0;
+box-sizing: border-box;
   }
 
   /* headers 1 2 3 */
@@ -52,7 +56,23 @@ text-transform: capitalize;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
-  
+  /* Sections & divs */
+
+  .topline {
+    display: block;
+padding: 0 156px;
+border-bottom: 1px solid var(--light);
+  }
+  .topline_section {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+   .top-adrs-sec {
+    display: flex;
+    align-items: center;
+
+   }
 /* lists */
   .list {
     list-style: none
@@ -101,7 +121,9 @@ text-transform: capitalize;
           line-height: 1.17; 
           letter-spacing: 0.03em;
           text-transform: uppercase;
-          text-decoration: none
+          text-decoration: none;
+          padding: 24px 0;
+          margin-right: 56px;
           }
     .partlogo-header {
             color: var(--dark);
@@ -117,6 +139,9 @@ font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
 font-style: normal;
+  }
+  .header-item {
+    margin-right: 40px;
   }
 
 /* main */
