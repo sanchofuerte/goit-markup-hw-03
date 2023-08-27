@@ -62,15 +62,15 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 .head-three {
   color: var(--dark);
@@ -82,34 +82,8 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* Sections & divs */
-
-/* lists */
-
-.list-address {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text);
-  font-weight: 400;
-}
-.item-contacts {
-  background-color: var(--white);
-}
-
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--pressed-state);
-}
-
 /* header */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -122,9 +96,7 @@ img {
 .header-nav-list {
   display: flex;
 }
-.header-item {
-  padding: 24px 0;
-}
+
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -162,6 +134,29 @@ img {
   letter-spacing: 0.02em;
   font-style: normal;
 }
+.list-address {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  font-weight: 400;
+}
+.item-contacts {
+  background-color: var(--white);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  padding: 24px 0;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state);
+}
 
 /* main */
 
@@ -170,12 +165,10 @@ img {
   min-height: 600px;
   align-items: center;
   margin-bottom: 120px;
+  padding: 188px 0;
 }
 .studio-container {
   display: block;
-  padding: 260px 0;
-  margin: auto;
-  width: 496px;
 }
 .studio-head-one {
   margin-bottom: 48px;
@@ -219,7 +212,7 @@ img {
   gap: 24px;
 }
 .who-we-are_item {
-  width: calc(100% - 3 * 24px) / 4;
+  width: calc (100% - 3 * 24px) / 4;
 }
 .who-we-are-head {
   margin-bottom: 8px;
@@ -315,10 +308,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
 }
 .portfolio-item {
   width: calc(100% - 48px) / 3;
+}
+.portfolio-link {
+  padding: 24px 0;
 }
 .head-two-portfolio {
   font-family: inherit;
