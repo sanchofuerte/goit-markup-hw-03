@@ -213,12 +213,12 @@ img {
   gap: 24px;
 }
 .who-we-are_item {
-  width: calc(100% - 3 * 24px) / 4;
+  width: calc(100% - 72px) / 4;
 }
 .who-we-are-head {
   margin-bottom: 8px;
 }
-/*what we are doing */
+/*what we are doing  Section 3*/
 .our-work {
   padding-bottom: 120px;
 }
