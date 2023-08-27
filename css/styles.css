@@ -297,19 +297,22 @@ p {
 .portfolio-item {
   flex-basis: calc(100% - 48 * 3 - 1) / 3;
 }
-.p .head-two-portfolio {
+.head-two-portfolio {
   font-family: inherit;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding-top: 32px;
   padding-bottom: 8px;
 }
-.portfolio-border {
-  padding-bottom: 32px;
+.portfolio-img {
+  margin: 0;
+}
+.portfolio-card-border {
+  margin-top: -5px;
   border: 1px solid var(--acsent);
+  padding: 32px 16px;
 }
 /* footer */
 .footer {
